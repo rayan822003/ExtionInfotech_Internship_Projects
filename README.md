@@ -16,7 +16,7 @@ This guide walks you through deploying a static website on Google Cloud Platform
 4. Browse to VM insntances. (On your left, click on Virtual Machine to find it)
 5. Click on the Create Instance button. 
 
-![image1](./read_me_images/step%201.jpg)
+![image1](./read_me_images/step%201.JPG)
 
 6. Navigate to Machine Configuration on the left panel.
 7. Name your Instance. (In the above image `project1`)

@@ -16,21 +16,21 @@ This guide walks you through deploying a static website on Google Cloud Platform
 4. Browse to VM insntances. (On your left, click on Virtual Machine to find it)
 5. Click on the Create Instance button. 
 
-![image1](./read_me_images/step%201.png)
+![image1](./read_me_images/step%201.jpg)
 
 6. Navigate to Machine Configuration on the left panel.
 7. Name your Instance. (In the above image `project1`)
 8. Select `us-west1 (Oregon)` in Region, and `us-west1-b` in Zone, in order to decrease your monthly estimate.
 9. In the general purpose section, select the E2 in the Series.
 
-![image2](./read_me_images/step%202.png)
+![image2](./read_me_images/step%202.jpg)
 
 10. Scroll down in the same window and find `Machine Type`
 11. Select `Preset` and select `e2-micro (2 vCPU, 1 core, 1GB memory)` from the dropdown.
 12. Navigate to OS and Storage in the left Panel.
 13. In the Operating System options, click on Change.
 
-![image3](./read_me_images/step%203.png)
+![image3](./read_me_images/step%203.jpg)
 
 14. Select Ubuntu in `Operating System` dropdown.
 15. Select Ubuntu 20.04 LTS in the `Version` dropdown.
@@ -38,7 +38,7 @@ This guide walks you through deploying a static website on Google Cloud Platform
 17. Select 10 GB in the `Size(GB)` dropdown.
 18. And then click on the `Select` button.
 
-![image4](./read_me_images/step%204.png)
+![image4](./read_me_images/step%204.jpg)
 
 19. Navigate to `Networking` in the left panel.
 20. In the `Networking` section in the middle, Check the options: 
@@ -57,7 +57,7 @@ sudo su
 ```
 This will show the `root@\<your instance name>`, then: 
 
-![image6](./read_me_images/step%206.png)
+![image6](./read_me_images/step%206.jpg)
 
 ```
 cd
@@ -71,14 +71,14 @@ apt-get install apache2
 
 Type in `'Y'` when prompted if you want to continue.
 
-![image7](./read_me_images/step%207.png)
+![image7](./read_me_images/step%207.jpg)
 
 Then type in :
 
 ```
 service apache2 status
 ```
-![image8](./read_me_images/step%208.png)
+![image8](./read_me_images/step%208.jpg)
 
 To check if the service is active and running or not.
 
@@ -108,13 +108,13 @@ gcloud auth login
 
 Your terminal should look like this: 
 
-![image10](./read_me_images/step%2010.png)
+![image10](./read_me_images/step%2010.jpg)
 
 Type in 'Y' when you are prompted to continue.
 
 Copy the link that will be generated and paste it in your browser.
 
-![image11](./read_me_images/step%2011.png)
+![image11](./read_me_images/step%2011.jpg)
 
 Copy the code and paste it back into the same SSH terminal.
 
@@ -150,11 +150,11 @@ Your terminal should have the command entered like this:
 
 5. Come back to the browser tab that has the \<External IP> and reload it.
 
-![image14](./read_me_images/step%2014.png)
+![image14](./read_me_images/step%2014.jpg)
 
 If the website loads with your html file, your website has successfully hosted.
 
-![image15](./read_me_images/step%2015.png)
+![image15](./read_me_images/step%2015.jpg)
 
 ## Common Error Corrections
 
@@ -254,7 +254,7 @@ This opens the crontab.
 Type 1 and press Enter to use Nano (it's the easiest).
 This will open an empty crontab file for scheduling tasks.
 
-![image16](./read_me_images/step%2016.png)
+![image16](./read_me_images/step%2016.jpg)
 
 11. Add Your Backup Job
 
@@ -271,7 +271,7 @@ Runs the backup every day at 2 AM
 , -m enables parallel processing for faster uploads, 
 Adjust the timing if needed `(0 2 * * * means 2 AM daily)`.
 
-![image17](./read_me_images/step%2017.png)
+![image17](./read_me_images/step%2017.jpg)
 
 12. Save and Exit
 
@@ -297,7 +297,7 @@ If it uploads the files successfully, cron will work at the scheduled time.
 
 The Final SSH commands would like this:
 
-![image18](./read_me_images/step%2018.png)
+![image18](./read_me_images/step%2018.jpg)
 
 Now the website is backed up and automated as well.
 
